@@ -1,0 +1,275 @@
+/*
+#  ·················
+#  ··_______________
+#  ·/·___/·___/·___/
+#  /·/__(__··|__··)·
+#  \___/____/____/··
+#  ·················
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+/*------ Variables */
+:root{
+  /*------ Colores */
+  --green-color: #4682B4;
+  --black-color: black;
+  --white-color: white;
+  /*------ Tipografía */
+  --normal:12px;
+  /*------ Espaciado */
+  --space:10px;
+  --space-2:20px;
+  /*------ Box shadow*/
+  --box:0px 0 2px 1px #e6e5e9;
+}
+
+/* -------------------------------------------  */
+html, body{
+  margin:0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--black-color);
+}
+
+p, label{
+  font-size: var(--normal);
+}
+
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  min-height: 60px;
+  background-color: var(--green-color);
+}
+
+nav a{
+  text-decoration: none;
+  color: #E6E6FA;
+  font-size: 15px;
+}
+
+nav a img {
+  object-fit: cover;
+  width: 25vw;
+  height: 60px;
+}
+
+nav a:hover{
+  color: var(--white-color);
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li{
+  padding-right: 20px;
+  list-style: none;
+}
+
+hr{
+  opacity: .2;
+}
+
+/* ------------------------------------------- MAIN SECTION */
+
+.main_section{
+  background-color: #F5FFFA;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 40px 15% 5% 15%;
+  margin: 0;
+  color: black;
+}
+
+/* -------------------------------------------  PRODUCTOS */
+
+.products{
+  background-image: url("../images/hero.png");
+  background-color: #F5FFFA;
+  padding: 15%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 95px;
+  background-size: cover;
+}
+
+.product{
+  padding: 20px;
+  margin-top: -226px;
+}
+
+.image-product{
+  text-align: center;
+}
+
+.image-product img {
+  height: 250px;
+}
+
+.content{
+  padding: 20px;
+  background: var(--white-color);
+  border-radius: 3px;
+  box-shadow: 0px 0 2px 1px #e6e5e9;
+}
+
+.main_btn{
+  padding: var(--space);
+  background-color: var(--green-color);
+  width: 100%;
+  border: 0px;
+  border-radius: 2px;
+  cursor: pointer;
+  color: var(--white-color);
+}
+.main_btn:hover{
+  background-color: #6495ED;
+}
+
+/* Beneficios */
+.beneficios{
+  padding: 5%;
+  display: flex;
+}
+
+.beneficio{
+  text-align: center;
+  padding: 20px;
+}
+
+.beneficio img{
+  max-height: 100px
+}
+
+.text_beneficio{
+  text-align: justify;
+}
+
+/* Mentions */
+.mentions{
+  display: flex;
+  padding: 5%;
+}
+.mention img{
+  width: 100%;
+}
+h2.mention_title{
+  text-align: center;
+}
+.mention{
+  padding: var(--space);
+}
+.content_mention{
+  box-shadow: 0px 0 2px 1px #e6e5e9;
+}
+.mention .text{
+  padding: var(--space);
+}
+/* ------------------------------------------- Venta */
+
+.modulo_pago{
+background-color:var(--white-color);
+box-shadow: var(--box);
+padding:var(--space-2);
+}
+
+.modulo_pago_images{
+  max-width: 150px;
+  text-align: center;
+  width: 100%;
+  margin:auto;
+}
+
+.data{
+  margin-top: var(--space);
+  width: 100%;
+  padding: 5px;
+  border-radius: 2px;
+  border: 1px solid var(--black-color);
+  box-sizing: border-box;
+}
+
+.modulo_pago .main_btn{
+      margin-top: 10px;
+}
+
+
+
+/* ------------------------------------------- Footer */
+footer{
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--normal);
+  background-color: var(--green-color);
+  padding: var(--space);
+  color: #E6E6FA;
+}
+.contact a{
+  color: #E6E6FA;
+  text-decoration: none;
+}
+
+/* social */
+
+.social-link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 50px;
+  background-size: 50px 50px;
+}
+
+.social-link.twitter {
+  background-image: url('../images/twitter.svg');
+}
+
+.social-link.facebook {
+  background-image: url('../images/facebook.svg');
+}
+
+.social-link.instagram {
+  background-image: url('../images/instagram.svg');
+}
+
+.container_social {
+  text-align: center;
+}
+
+/* ----------------------------------------------------------------Faqs */
+
+.titleFaqs {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 2%;
+    padding: 10px;
+}
+
+.faqsFaqs {
+    max-width: 1000px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.faqsFaqs a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0;
+}
+
+.faqsAnwers h2 {
+  margin: 0;
+  padding: 10px 10%;
+}
+
+.faqsAnwers p {
+    font-size: 15px;
+    margin: 0;
+    padding: 10px 10% 40px;
+}
